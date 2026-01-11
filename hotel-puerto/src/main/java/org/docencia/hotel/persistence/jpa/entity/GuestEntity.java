@@ -2,10 +2,6 @@ package org.docencia.hotel.persistence.jpa.entity;
 
 import jakarta.persistence.*;
 
-/**
- * Entidad JPA que representa un huesped.
- * Mapea a la tabla "guest".
- */
 @Entity
 @Table(name = "guest")
 public class GuestEntity {

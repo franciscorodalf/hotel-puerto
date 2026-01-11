@@ -10,10 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-/**
- * Controlador REST para la gestion de huespedes.
- * Expone endpoints para operaciones CRUD.
- */
+
 @Tag(name = "Guests", description = "Operaciones REST de huéspedes")
 @RestController
 @RequestMapping("/api/guests")

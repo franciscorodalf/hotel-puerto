@@ -3,10 +3,7 @@ package org.docencia.hotel;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-/**
- * Clase principal de la aplicacion Spring Boot.
- * Inicia el contexto de Spring y la aplicacion.
- */
+
 @SpringBootApplication
 public class HotelApplication {
 

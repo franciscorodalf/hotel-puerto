@@ -3,10 +3,7 @@ package org.docencia.hotel.persistence.jpa.entity;
 import jakarta.persistence.*;
 import java.math.BigDecimal;
 
-/**
- * Entidad JPA que representa una habitacion.
- * Mapea a la tabla "room".
- */
+
 @Entity
 @Table(name = "room")
 public class RoomEntity {

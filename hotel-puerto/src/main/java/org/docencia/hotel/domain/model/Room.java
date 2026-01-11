@@ -2,21 +2,12 @@ package org.docencia.hotel.domain.model;
 
 import java.math.BigDecimal;
 
-/**
- * Modelo de dominio que representa una habitacion.
- */
 public class Room {
-    /** Identificador unico de la habitacion. */
     private Long id;
-    /** Numero de la habitacion. */
     private String number;
-    /** Tipo de habitacion (ej. "Simple", "Doble"). */
     private String type;
-    /** Precio por noche. */
     private BigDecimal price;
-    /** Indica si la habitacion esta disponible. */
     private Boolean available;
-    /** Identificador del hotel al que pertenece. */
     private Long hotelId;
 
     /**

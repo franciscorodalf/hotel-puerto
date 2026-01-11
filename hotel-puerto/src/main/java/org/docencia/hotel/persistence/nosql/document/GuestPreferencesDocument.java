@@ -3,21 +3,13 @@ package org.docencia.hotel.persistence.nosql.document;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-/**
- * Documento MongoDB que representa las preferencias de un huesped.
- * Mapea a la coleccion "guest_preferences".
- */
+
 @Document(collection = "guest_preferences")
 public class GuestPreferencesDocument {
 
     @Id
     private String id;
-    
-    // We will link this to the JPA Guest ID manually or via service logic
-    // But typically we might store the JPA ID here or just use the same ID if possible (but JPA is Long, Mongo is String/ObjectId)
-    // Let's assume we store the JPA Guest ID as a reference if needed, or just keep it simple.
-    // The requirement says "Guest (polyglot): parte en H2 (JPA) + parte en Mongo (NoSQL)".
-    // Usually we link them by ID. Let's add a guestId field to link back to JPA entity.
+
     private Long guestId;
 
     private String dietaryRequirements;

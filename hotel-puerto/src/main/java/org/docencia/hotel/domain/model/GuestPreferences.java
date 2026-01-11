@@ -1,16 +1,11 @@
 package org.docencia.hotel.domain.model;
 
-/**
- * Modelo de dominio que representa las preferencias de un huesped.
- */
+
 public class GuestPreferences {
-    /** Identificador unico (MongoDB). */
+
     private String id; 
-    /** Requisitos dieteticos. */
     private String dietaryRequirements;
-    /** Preferencia de habitacion (ej. "Piso alto", "Silenciosa"). */
     private String roomPreference; 
-    /** Peticiones especiales. */
     private String specialRequests;
 
     /**

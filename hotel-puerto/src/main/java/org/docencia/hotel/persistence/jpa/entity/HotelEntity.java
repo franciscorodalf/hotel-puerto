@@ -3,10 +3,7 @@ package org.docencia.hotel.persistence.jpa.entity;
 import jakarta.persistence.*;
 import java.util.List;
 
-/**
- * Entidad JPA que representa un hotel.
- * Mapea a la tabla "hotel".
- */
+
 @Entity
 @Table(name = "hotel")
 public class HotelEntity {

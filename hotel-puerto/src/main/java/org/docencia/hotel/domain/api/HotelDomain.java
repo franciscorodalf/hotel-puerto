@@ -3,9 +3,7 @@ package org.docencia.hotel.domain.api;
 import org.docencia.hotel.domain.model.Hotel;
 import java.util.List;
 
-/**
- * Interfaz de dominio para la gestion de hoteles.
- */
+
 public interface HotelDomain {
     /**
      * Crea un nuevo hotel.

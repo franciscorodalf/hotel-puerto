@@ -2,19 +2,11 @@ package org.docencia.hotel.domain.model;
 
 import java.time.LocalDate;
 
-/**
- * Modelo de dominio que representa una reserva.
- */
 public class Booking {
-    /** Identificador unico de la reserva. */
     private Long id;
-    /** Fecha de entrada. */
     private LocalDate checkIn;
-    /** Fecha de salida. */
     private LocalDate checkOut;
-    /** Identificador de la habitacion reservada. */
     private Long roomId;
-    /** Identificador del huesped que realiza la reserva. */
     private Long guestId;
 
     /**

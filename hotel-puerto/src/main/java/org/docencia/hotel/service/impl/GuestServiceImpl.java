@@ -15,10 +15,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**
- * Implementacion del servicio de gestion de huespedes.
- * Maneja la persistencia hibrida (JPA + MongoDB).
- */
+
 @Service
 public class GuestServiceImpl implements GuestService {
 

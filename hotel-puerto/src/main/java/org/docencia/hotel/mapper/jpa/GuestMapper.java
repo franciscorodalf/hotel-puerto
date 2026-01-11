@@ -4,9 +4,7 @@ import org.mapstruct.Mapper;
 import org.docencia.hotel.domain.model.Guest;
 import org.docencia.hotel.persistence.jpa.entity.GuestEntity;
 
-/**
- * Mapper para convertir entre Guest (Dominio) y GuestEntity (JPA).
- */
+
 @Mapper(componentModel = "spring")
 public interface GuestMapper {
     

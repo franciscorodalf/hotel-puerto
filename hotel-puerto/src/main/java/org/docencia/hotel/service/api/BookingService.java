@@ -3,9 +3,7 @@ package org.docencia.hotel.service.api;
 import org.docencia.hotel.domain.model.Booking;
 import java.util.List;
 
-/**
- * Servicio para la gestion de reservas.
- */
+
 public interface BookingService {
     /**
      * Crea una nueva reserva.

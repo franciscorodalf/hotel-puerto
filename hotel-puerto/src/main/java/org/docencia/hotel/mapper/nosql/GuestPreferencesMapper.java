@@ -4,9 +4,7 @@ import org.mapstruct.Mapper;
 import org.docencia.hotel.domain.model.GuestPreferences;
 import org.docencia.hotel.persistence.nosql.document.GuestPreferencesDocument;
 
-/**
- * Mapper para convertir entre GuestPreferences (Dominio) y GuestPreferencesDocument (MongoDB).
- */
+
 @Mapper(componentModel = "spring")
 public interface GuestPreferencesMapper {
     

@@ -1,18 +1,10 @@
 package org.docencia.hotel.domain.model;
 
-/**
- * Modelo de dominio que representa un hotel.
- */
 public class Hotel {
-    /** Identificador unico del hotel. */
     private Long id;
-    /** Nombre del hotel. */
-    private String name;
-    /** Direccion del hotel. */
+    private String name;    
     private String address;
-    /** Ciudad donde se ubica el hotel. */
     private String city;
-    /** Numero de estrellas del hotel. */
     private Integer stars;
 
     /**

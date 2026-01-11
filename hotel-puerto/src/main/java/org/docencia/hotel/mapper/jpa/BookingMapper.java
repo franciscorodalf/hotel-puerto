@@ -5,9 +5,7 @@ import org.mapstruct.Mapping;
 import org.docencia.hotel.domain.model.Booking;
 import org.docencia.hotel.persistence.jpa.entity.BookingEntity;
 
-/**
- * Mapper para convertir entre Booking (Dominio) y BookingEntity (JPA).
- */
+
 @Mapper(componentModel = "spring")
 public interface BookingMapper {
     

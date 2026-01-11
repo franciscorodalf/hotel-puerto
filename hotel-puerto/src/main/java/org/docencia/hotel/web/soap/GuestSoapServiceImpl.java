@@ -5,9 +5,7 @@ import org.docencia.hotel.domain.model.Guest;
 import jakarta.jws.WebService;
 import org.springframework.stereotype.Service;
 
-/**
- * Implementacion del servicio SOAP para la gestion de huespedes.
- */
+
 @Service
 @WebService(
         endpointInterface = "org.docencia.hotel.web.soap.GuestSoapService",

@@ -3,9 +3,7 @@ package org.docencia.hotel.service.api;
 import org.docencia.hotel.domain.model.Room;
 import java.util.List;
 
-/**
- * Servicio para la gestion de habitaciones.
- */
+
 public interface RoomService {
     /**
      * Crea una nueva habitacion.

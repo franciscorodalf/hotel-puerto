@@ -3,9 +3,7 @@ package org.docencia.hotel.service.api;
 import org.docencia.hotel.domain.model.Guest;
 import java.util.List;
 
-/**
- * Servicio para la gestion de huespedes.
- */
+
 public interface GuestService {
     /**
      * Crea un nuevo huesped.

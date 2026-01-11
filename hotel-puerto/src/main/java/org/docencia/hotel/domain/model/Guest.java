@@ -1,21 +1,11 @@
 package org.docencia.hotel.domain.model;
 
-/**
- * Modelo de dominio que representa un huesped.
- */
 public class Guest {
-    /** Identificador unico del huesped. */
     private Long id;
-    /** Nombre del huesped. */
     private String firstName;
-    /** Apellido del huesped. */
     private String lastName;
-    /** Correo electronico del huesped. */
     private String email;
-    /** Telefono de contacto. */
     private String phone;
-    
-    /** Preferencias del huesped (almacenadas en NoSQL). */
     private GuestPreferences preferences;
 
     /**

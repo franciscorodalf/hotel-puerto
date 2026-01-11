@@ -5,9 +5,7 @@ import org.mapstruct.Mapping;
 import org.docencia.hotel.domain.model.Room;
 import org.docencia.hotel.persistence.jpa.entity.RoomEntity;
 
-/**
- * Mapper para convertir entre Room (Dominio) y RoomEntity (JPA).
- */
+
 @Mapper(componentModel = "spring")
 public interface RoomMapper {
     

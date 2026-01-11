@@ -11,9 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**
- * Implementacion del servicio de gestion de habitaciones.
- */
+
 @Service
 public class RoomServiceImpl implements RoomService {
 
