@@ -1,5 +1,11 @@
 package org.docencia.hotel.persistence.repository.jpa;
 
-public interface RoomRepository {
-    // TODO: contrato JPA
+import org.docencia.hotel.persistence.jpa.entity.RoomEntity;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+import java.util.List;
+
+@Repository
+public interface RoomRepository extends JpaRepository<RoomEntity, Long> {
+    List<RoomEntity> findByHotelId(Long hotelId);
 }

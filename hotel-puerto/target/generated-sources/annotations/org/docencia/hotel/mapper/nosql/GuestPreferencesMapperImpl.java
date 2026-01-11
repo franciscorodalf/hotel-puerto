@@ -7,8 +7,8 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2025-12-27T12:13:46+0000",
-    comments = "version: 1.5.5.Final, compiler: Eclipse JDT (IDE) 3.44.0.v20251118-1623, environment: Java 21.0.9 (Eclipse Adoptium)"
+    date = "2026-01-11T01:14:41+0000",
+    comments = "version: 1.5.5.Final, compiler: Eclipse JDT (IDE) 3.45.0.v20260101-2150, environment: Java 21.0.9 (Eclipse Adoptium)"
 )
 @Component
 public class GuestPreferencesMapperImpl implements GuestPreferencesMapper {
@@ -21,6 +21,11 @@ public class GuestPreferencesMapperImpl implements GuestPreferencesMapper {
 
         GuestPreferencesDocument guestPreferencesDocument = new GuestPreferencesDocument();
 
+        guestPreferencesDocument.setId( domain.getId() );
+        guestPreferencesDocument.setDietaryRequirements( domain.getDietaryRequirements() );
+        guestPreferencesDocument.setRoomPreference( domain.getRoomPreference() );
+        guestPreferencesDocument.setSpecialRequests( domain.getSpecialRequests() );
+
         return guestPreferencesDocument;
     }
 
@@ -31,6 +36,11 @@ public class GuestPreferencesMapperImpl implements GuestPreferencesMapper {
         }
 
         GuestPreferences guestPreferences = new GuestPreferences();
+
+        guestPreferences.setId( doc.getId() );
+        guestPreferences.setDietaryRequirements( doc.getDietaryRequirements() );
+        guestPreferences.setRoomPreference( doc.getRoomPreference() );
+        guestPreferences.setSpecialRequests( doc.getSpecialRequests() );
 
         return guestPreferences;
     }

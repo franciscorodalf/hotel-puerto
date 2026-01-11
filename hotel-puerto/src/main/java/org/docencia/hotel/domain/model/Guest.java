@@ -1,119 +1,56 @@
 package org.docencia.hotel.domain.model;
 
+/**
+ * Modelo de dominio que representa un huesped.
+ */
 public class Guest {
-
-    Long id;
-    String name;
-    String lastName;
-    String email;
-    String phone;
+    /** Identificador unico del huesped. */
+    private Long id;
+    /** Nombre del huesped. */
+    private String firstName;
+    /** Apellido del huesped. */
+    private String lastName;
+    /** Correo electronico del huesped. */
+    private String email;
+    /** Telefono de contacto. */
+    private String phone;
+    
+    /** Preferencias del huesped (almacenadas en NoSQL). */
+    private GuestPreferences preferences;
 
     /**
-     * Constructor vacio
+     * Constructor vacio.
      */
-    public Guest() {
-
-    }
+    public Guest() {}
 
     /**
-     * Constructor con id
-     * 
-     * @param id del guest
+     * Constructor con parametros.
+     * @param id Identificador.
+     * @param firstName Nombre.
+     * @param lastName Apellido.
+     * @param email Correo electronico.
+     * @param phone Telefono.
+     * @param preferences Preferencias.
      */
-    public Guest(Long id) {
+    public Guest(Long id, String firstName, String lastName, String email, String phone, GuestPreferences preferences) {
         this.id = id;
-    }
-
-    /**
-     * Constructor con todos los parametros
-     * 
-     * @param id       del guest
-     * @param name     del guest
-     * @param lastName del guest
-     * @param email    del guest
-     * @param phone    del guest
-     */
-    public Guest(Long id, String name, String lastName, String email, String phone) {
-        this.id = id;
-        this.name = name;
+        this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.phone = phone;
+        this.preferences = preferences;
     }
 
-    /**
-     * GETTERS AND SETTERS
-     */
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
-
-    @Override
-    public String toString() {
-        return "Guest [id=" + id + ", name=" + name + ", lastName=" + lastName + ", email=" + email + ", phone=" + phone
-                + "]";
-    }
-
-    @Override
-    public int hashCode() {
-        final int prime = 31;
-        int result = 1;
-        result = prime * result + ((id == null) ? 0 : id.hashCode());
-        return result;
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj)
-            return true;
-        if (obj == null)
-            return false;
-        if (getClass() != obj.getClass())
-            return false;
-        Guest other = (Guest) obj;
-        if (id == null) {
-            if (other.id != null)
-                return false;
-        } else if (!id.equals(other.id))
-            return false;
-        return true;
-    }
-
+    public Long getId() { return id; }
+    public void setId(Long id) { this.id = id; }
+    public String getFirstName() { return firstName; }
+    public void setFirstName(String firstName) { this.firstName = firstName; }
+    public String getLastName() { return lastName; }
+    public void setLastName(String lastName) { this.lastName = lastName; }
+    public String getEmail() { return email; }
+    public void setEmail(String email) { this.email = email; }
+    public String getPhone() { return phone; }
+    public void setPhone(String phone) { this.phone = phone; }
+    public GuestPreferences getPreferences() { return preferences; }
+    public void setPreferences(GuestPreferences preferences) { this.preferences = preferences; }
 }
